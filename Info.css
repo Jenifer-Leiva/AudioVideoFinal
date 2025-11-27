@@ -1,0 +1,62 @@
+/* Styles.css */
+/* Reset */
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: black;
+  background-size: contain;         
+  background-repeat: no-repeat;   
+  background-position: center;
+  background-attachment: fixed;   
+}
+
+/* HEADER */
+.header-line{
+  position:relative;
+  height:48px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:rgb(61, 61, 61);
+}
+
+.header-left{
+  position:absolute;
+  left:1rem;
+  display:flex;
+  align-items:center;
+}
+
+.header-left a{
+  text-decoration:none;
+  color:#ffffff;
+  font-weight:600;
+}
+
+.header-center{
+  font-weight:700;
+  font-size:1.1rem;
+}
+
+.header-center a{
+  text-decoration:none;
+  color:#ffffff;
+  font-weight:600;
+}
+
+
+/* MAIN INFORMACION*/
+main{
+  padding:1.5rem;
+}
+
+.detalle-box{
+  margin-top:1rem;
+  padding:1rem;
+  background:white;
+  border-radius:8px;
+  box-shadow:var(--shadow);
+}
+
+
+
