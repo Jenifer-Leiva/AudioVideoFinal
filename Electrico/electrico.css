@@ -1,0 +1,302 @@
+/* Styles.css */
+/* Reset */
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: black;
+
+  background-size: contain;         
+  background-repeat: no-repeat;   
+  background-position: center;
+  background-attachment: fixed;  
+  
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* HEADER */
+.header-line{
+  position:relative;
+  height:48px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:rgb(61, 61, 61);
+}
+
+.header-left{
+  position:absolute;
+  left:1rem;
+  display:flex;
+  align-items:center;
+}
+
+.header-left a{
+  text-decoration:none;
+  color:#ffffff;
+  font-weight:600;
+}
+
+.header-center{
+  font-weight:700;
+  font-size:1.1rem;
+}
+
+.header-center a{
+  text-decoration:none;
+  color:#ffffff;
+  font-weight:600;
+}
+
+
+
+/* --- PESTAÑA ÉPOCAS LATERAL --- */
+.tab-epocas{
+  position:fixed;
+  left:0;
+  top:50%;
+  transform:translateY(-50%);
+  z-index:1000;
+}
+
+.tab-button{
+  transform:rotate(-90deg);
+  background:white;
+  padding:0.5rem 1rem;
+  border-radius:6px 6px 0 0;
+  border:1px solid #ddd;
+  cursor:pointer;
+  box-shadow:var(--shadow);
+  font-weight:bold;
+}
+
+/* PANEL flotante */
+.epocas-panel{
+  position:fixed;
+  left:50px;
+  top:50%;
+  transform:translateY(-50%);
+  display:none;
+   background: rgba(255, 255, 255, 0.395);
+  padding:0.5rem;
+  border-radius:8px;
+  box-shadow:var(--shadow);
+  border:1px solid #ccc;
+}
+
+.epocas-panel.show{
+  display:block;
+}
+
+.epocas-list{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.epocas-list button{
+  width:100%;
+  text-align:left;
+  background:none;
+  border:0;
+  padding:0.7rem;
+  cursor:pointer;
+  border-radius:6px;
+  font-size:0.95rem;
+}
+
+.epocas-list button:hover{
+  background:#eee;
+}
+
+/*  MAIN 1 */
+
+.bg-fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../Imagenes/EraElectrica.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+  z-index: -1;
+}
+
+/*MAIN 2*/
+.imagenBig {
+ position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 80vw;
+  height: auto;
+  transform: translate(-50%, -50%); 
+    z-index: -1;
+}
+
+.btn-class-name {
+  --primary: 91, 255, 130;
+  --secondary: 0, 0, 0;
+  width: 60px;
+  height: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
+  outline: 10px solid rgb(var(--primary), .5);
+  border-radius: 100%;
+  position: absolute;
+  top: 480px;       
+  left: 600px;
+  transition: .3s;
+}
+
+.btn-class-name .back {
+  background: rgb(var(--secondary));
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-class-name .front {
+  background: linear-gradient(0deg, rgba(var(--primary), .6) 20%, rgba(var(--primary)) 50%);
+  box-shadow: 0 .5em 1em -0.2em rgba(var(--secondary), .5);
+  border-radius: 100%;
+  position: absolute;
+  border: 1px solid rgb(var(--secondary));
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: inherit;
+  transform: translateY(-15%);
+  transition: .15s;
+  color: rgb(var(--secondary));
+}
+
+.btn-class-name:active .front {
+  transform: translateY(0%);
+  box-shadow: 0 0;
+}
+
+#gifAgua {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-130%, -70%);
+  max-height: 20vh;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.capa-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  width: 80vw;
+  height: auto;
+
+  transform: translate(-50%, -50%); 
+  
+  object-fit: contain;    
+
+  pointer-events: none; 
+  z-index: -1;  
+
+  opacity: 0;
+  animation: fadeIn 50s forwards;
+}
+
+
+
+
+/*MAIN3*/
+
+.imagenSala {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: transform 0.3s ease;
+
+}
+
+.imagenSala[data-id="1"] {   transform: translate(-50%, -46%);
+  max-height: 90vh;}
+ 
+.imagenSala[data-id="2"] {   transform: translate(-210%, -10%);
+  height: 40vh;cursor: pointer;}
+   .imagenSala[data-id="2"]:hover {
+    transform: translate(-210%, -10%) scale(1.05);
+  }
+  
+.imagenSala[data-id="3"] { transform: translate(-60%, -10%);
+  height: 40vh;cursor: pointer; }
+  .imagenSala[data-id="3"]:hover {
+    transform: translate(-60%, -10%) scale(1.05);
+  }
+  
+ 
+.imagenSala[data-id="4"] {   transform: translate(-60%, -70%);
+  height: 40vh;cursor: pointer; }
+  .imagenSala[data-id="4"]:hover {
+    transform: translate(-60%, -70%) scale(1.05);
+  }
+  
+  
+  .imagenSala[data-id="5"] {   transform: translate(50%, -10%);
+ height: 45vh;cursor: pointer; }
+  .imagenSala[data-id="5"]:hover {
+    transform: translate(50%, -10%) scale(1.05);
+  }
+  
+  
+
+
+
+/* FOOTER */
+footer {
+ position: fixed;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
+  padding: 0.5rem 0; 
+}
+
+.btn-imagen {
+   width: 100px;
+  height: 60px;
+  border-radius: 12px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-imagen:hover {
+  transform: scale(1.1); 
+}
+
+
+
+
+
+
