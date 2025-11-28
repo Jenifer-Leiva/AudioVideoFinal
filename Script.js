@@ -29,10 +29,10 @@ document.querySelectorAll('.epocas-list button').forEach(btn => {
     const ep = btn.dataset.epoca;
 
     if (ep === "acustica") {
-      window.location.href = "acustico1.html";  
+      window.location.href = "../Acustico/acustico1.html";  
     }
     else if (ep === "electrica") {
-      window.location.href = "electrica1.html"; 
+      window.location.href = "../Electrico/electrico1.html"; 
     }
     else if (ep === "tape") {
       window.location.href = "tape1.html"; 

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Historia del audio</title>
+  <link rel="stylesheet" href="electrico.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header-line">
+    <div class="header-left">
+      <a href="../Info.html" >Más información</a>
+    </div>
+    <div class="header-center">
+      <a href="../Index.html" >Historia del audio</a>
+    </div>
+  </header>
+
+  <!-- Pestaña lateral Épocas -->
+  <div class="tab-epocas">
+    <button id="tabBtn" class="tab-button" aria-controls="epocasPanel">
+      Éras
+    </button>
+
+    <div id="epocasPanel" class="epocas-panel">
+      <ul class="epocas-list">
+        <li><button data-epoca="acustica">Éra acústica</button></li>
+        <li><button data-epoca="electrica">Éra eléctrica</button></li>
+        <li><button data-epoca="tape">Era del tape</button></li>
+        <li><button data-epoca="digital">Era digital</button></li>
+      </ul>
+    </div>
+  </div>
+
+ <main>
+  <audio id="pista2" src="../Audio/Multipista/multipista_001.wav" loop></audio>
+<audio id="pista3" src="../Audio/Multipista/multipista_002.wav" loop></audio>
+<audio id="pista4" src="../Audio/Multipista/multipista_003.wav" loop></audio>
+<audio id="pista5" src="../Audio/Multipista/multipista_004.wav" loop></audio>
+
+
+    <img class="imagenSala" data-id="1" src="../Imagenes/electrico/d2/Sala.png">
+    <img id="img2" class="imagenSala" data-id="2" src="../Imagenes/electrico/d2/guitarelectrica.png">
+    <img id="img3" class="imagenSala" data-id="3" src="../Imagenes/electrico/d2/bateria.png">
+    <img id="img4" class="imagenSala" data-id="4" src="../Imagenes/electrico/d2/fantasma.png">
+    <img id="img5" class="imagenSala" data-id="5" src="../Imagenes/electrico/d2/bajo.png">
+</main>
+
+<footer>
+    <a href="electrico2.html">
+    <img src="../Imagenes/Botonizq.png" alt="Ir a página" class="btn-imagen">
+  </a>
+    <a href="electrico3.html">
+    <img src="../Imagenes/BotonDer.png" alt="Ir a página" class="btn-imagen">
+  </a>
+</footer>
+
+<script src="../script.js"></script>
+<script src="electrico.js"></script>
+
+</body>
+</html>

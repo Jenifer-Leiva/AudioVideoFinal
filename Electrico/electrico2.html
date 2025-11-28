@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Historia del audio</title>
+  <link rel="stylesheet" href="electrico.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header-line">
+    <div class="header-left">
+      <a href="../Info.html" >Más información</a>
+    </div>
+    <div class="header-center">
+      <a href="../Index.html" >Historia del audio</a>
+    </div>
+  </header>
+
+  <!-- Pestaña lateral Épocas -->
+  <div class="tab-epocas">
+    <button id="tabBtn" class="tab-button" aria-controls="epocasPanel">
+      Éras
+    </button>
+
+    <div id="epocasPanel" class="epocas-panel">
+      <ul class="epocas-list">
+        <li><button data-epoca="acustica">Éra acústica</button></li>
+        <li><button data-epoca="electrica">Éra eléctrica</button></li>
+        <li><button data-epoca="tape">Era del tape</button></li>
+        <li><button data-epoca="digital">Era digital</button></li>
+      </ul>
+    </div>
+  </div>
+
+ <main>
+        <img class="imagenBig" data-id="1" src="../Imagenes/electrico/d1/BajoAgua.png">
+
+        <img src="../Imagenes/electrico/d1/letras.png" class="capa-overlay">  
+
+        <audio id="audioLoop" src="../Audio/debajomar.wav" autoplay loop></audio>
+
+        <img id="gifAgua" src="../Gif/rayo.gif" style="display:none; ">
+
+        <!-- Audio que será activado con el botón -->
+        <audio id="audioEfecto" src="../Audio/electricobajoagua.wav"></audio>
+
+        <button id="btnAgua" class="btn-class-name">
+        <span class="back"></span>
+  <span class="front"></span>
+</button>
+
+</main>
+
+<footer>
+    <a href="electrico1.html">
+    <img src="../Imagenes/Botonizq.png" alt="Ir a página" class="btn-imagen">
+  </a>
+    <a href="electrico3.html">
+    <img src="../Imagenes/BotonDer.png" alt="Ir a página" class="btn-imagen">
+  </a>
+</footer>
+
+<script src="../script.js"></script>
+<script src="electrico.js"></script>
+
+</body>
+</html>
