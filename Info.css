@@ -7,7 +7,7 @@ body{
   background-size: contain;         
   background-repeat: no-repeat;   
   background-position: center;
-  background-attachment: fixed;   
+    
 }
 
 /* HEADER */
@@ -56,6 +56,15 @@ main{
   background:white;
   border-radius:8px;
   box-shadow:var(--shadow);
+}
+.mi-imagen {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  height: 100%;
+  width: auto;
+  z-index: -1;
+  transform: translate(-50%, -55%);
 }
 
 

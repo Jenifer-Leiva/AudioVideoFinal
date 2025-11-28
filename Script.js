@@ -35,7 +35,7 @@ document.querySelectorAll('.epocas-list button').forEach(btn => {
       window.location.href = "../Electrico/electrico1.html"; 
     }
     else if (ep === "tape") {
-      window.location.href = "tape1.html"; 
+      window.location.href = "../Magnetico/magnet1.html"; 
     }
     else if (ep === "digital") {
       window.location.href = "digital1.html"; 
