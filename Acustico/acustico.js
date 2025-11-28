@@ -70,3 +70,19 @@ popup.addEventListener("click", () => {
 
 });
 
+
+
+
+const img2 = document.getElementById("img2");
+const popup2 = document.getElementById("popupFono2");
+const popupImg2 = document.getElementById("popupFonoImg2");
+
+// ABRIR
+img2.addEventListener("click", () => {
+    popup2.style.display = "block";
+});
+
+// CERRAR
+popup2.addEventListener("click", () => {
+    popup2.style.display = "none";
+});
