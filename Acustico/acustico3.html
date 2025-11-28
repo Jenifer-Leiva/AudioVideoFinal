@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Historia del audio</title>
+  <link rel="stylesheet" href="acustico.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header-line">
+    <div class="header-left">
+      <a href="../Info.html" >Más información</a>
+    </div>
+    <div class="header-center">
+      <a href="../Index.html" >Historia del audio</a>
+    </div>
+  </header>
+
+  <!-- Pestaña lateral Épocas -->
+  <div class="tab-epocas">
+    <button id="tabBtn" class="tab-button" aria-controls="epocasPanel">
+      Épocas
+    </button>
+
+    <div id="epocasPanel" class="epocas-panel">
+      <ul class="epocas-list">
+        <li><button data-epoca="acustica">Época acústica</button></li>
+        <li><button data-epoca="electrica">Época eléctrica</button></li>
+        <li><button data-epoca="tape">Era del tape</button></li>
+        <li><button data-epoca="digital">Era digital</button></li>
+      </ul>
+    </div>
+  </div>
+
+<main>
+   <img class="imagenBig" data-id="1" src="../Imagenes/acustico/d2/FondoSalon.png">
+  <img class="imagenBig" data-id="2" src="../Imagenes/acustico/d2/Foto.png">
+
+  <img id="img3" class="imagenBig" data-id="3" src="../Imagenes/acustico/d2/Caja.png">
+    <audio id="audioAbrir">
+      <source src="../Audio/cajaMusica.wav" type="audio/wav">
+    </audio>
+    <audio id="audioCerrar">
+      <source src="../Audio/madera.wav" type="audio/wav">
+    </audio>
+
+  <img id="img4" class="imagenBig" data-id="4" src="../Imagenes/acustico/d2/Fonoautografo.png">
+      <audio id="audioFono" src="../Audio/Fonoautograma.wav"></audio>
+          <div id="popupFono" class="popup">
+            <img id="popupFonoImg" src="../Gif/fonoautografo.gif">
+         </div>
+
+
+</main>
+
+<footer>
+    <a href="acustico2.html">
+    <img src="../Imagenes/Botonizq.png" alt="Ir a página" class="btn-imagen">
+  </a>
+    <a href="acustico3.html">
+    <img src="../Imagenes/BotonDer.png" alt="Ir a página" class="btn-imagen">
+  </a>
+</footer>
+
+<script src="../script.js"></script>
+<script src="acustico.js"></script>
+
+</body>
+</html>

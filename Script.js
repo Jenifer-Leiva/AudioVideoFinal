@@ -42,3 +42,4 @@ document.querySelectorAll('.epocas-list button').forEach(btn => {
     closePanel();
   });
 });
+
