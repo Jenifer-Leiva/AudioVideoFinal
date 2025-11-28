@@ -23,23 +23,24 @@ document.addEventListener('click', (e) => {
 });
 
 // Contenido de las épocas
+// Contenido de las épocas
 document.querySelectorAll('.epocas-list button').forEach(btn => {
   btn.addEventListener('click', () => {
     const ep = btn.dataset.epoca;
-    let texto = '';
 
     if (ep === "acustica") {
-      texto = "<strong>Época acústica:</strong> Grabación mecánica sin micrófonos.";
-    } else if (ep === "electrica") {
-      texto = "<strong>Época eléctrica:</strong> Uso de micrófonos y amplificación.";
-    } else if (ep === "tape") {
-      texto = "<strong>Era del tape:</strong> Cintas magnéticas y grabación analógica.";
-    } else if (ep === "digital") {
-      texto = "<strong>Era digital:</strong> DAWs, CDs y formatos digitales.";
+      window.location.href = "acustico1.html";  
     }
-
-    epocaDetalle.innerHTML = texto;
-    closePanel();
+    else if (ep === "electrica") {
+      window.location.href = "electrica1.html"; 
+    }
+    else if (ep === "tape") {
+      window.location.href = "tape1.html"; 
+    }
+    else if (ep === "digital") {
+      window.location.href = "digital1.html"; 
+    }
   });
 });
+
 
