@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Historia del audio</title>
-  <link rel="stylesheet" href="magnet1.css">
+  <link rel="stylesheet" href="magnet.css">
 </head>
 <body>
 
@@ -28,14 +28,17 @@
       <ul class="epocas-list">
         <li><button data-epoca="acustica">Éra acústica</button></li>
         <li><button data-epoca="electrica">Éra eléctrica</button></li>
-        <li><button data-epoca="tape">Era del tape</button></li>
+        <li><button data-epoca="tape">Era magnética</button></li>
         <li><button data-epoca="digital">Era digital</button></li>
       </ul>
     </div>
   </div>
 
  <main>
-<img class="mi-imagen" src="../Imagenes/magnetico/eraMagnetica1.png" alt="Descripción de la imagen">
+<img class="imagenBig" data-id="1" src="../Imagenes/magnetico/d1/magneticoTarima.png">
+
+<img id="img2" class="imagenBig" data-id="2" src="../Imagenes/magnetico/d1/magneticoCantante.png">
+
 </main>
 
 <footer>
@@ -49,7 +52,7 @@
 
 <script src="../script.js"></script>
 <script src="electrico.js"></script>
-<audio src="../Audio/jeanPAul.mp3" autoplay loop></audio>
+<audio src="../Audio/jeanPAul.mp3" autoplay></audio>
 
 </body>
 </html>
