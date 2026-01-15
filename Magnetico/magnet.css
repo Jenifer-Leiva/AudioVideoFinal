@@ -145,6 +145,53 @@ body{
   opacity: 0;
   animation: fadeIn 20s forwards}
 
+  .contenedorImagenes {
+  position: fixed; 
+  top: 50%;
+  left: 50%;
+  transform: translate(280%, -35%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw; 
+}
+
+
+   .imagenBig[data-id="3"] {
+    opacity: 0;
+  animation: fadeIn 20s forwards;
+  position: relative;
+  height: 10vw;
+  width: auto;
+  cursor: pointer;
+}
+.imagenBig[data-id="3"]:hover {
+  filter:
+    drop-shadow(2px 0 red)
+    drop-shadow(-2px 0 cyan)
+    brightness(0.1);
+}
+
+.popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  place-items: center;
+  z-index: 999;
+}
+
+.popup img {
+  max-width: 80vw;
+  max-height: 80vh;
+}
+
+.popup.activo {
+  display: grid;
+}
+
+
+
 /* FOOTER */
 footer {
  position: fixed;
