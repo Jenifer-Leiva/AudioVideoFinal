@@ -242,8 +242,9 @@ body{
   height: auto;
   transform: translate(-50%, -40%); 
     z-index: -2;
- opacity: 0;
-  animation: fadeIn 10s forwards;
+    opacity: 0;
+  animation: fadeIn 2s forwards;
+
 }
 
 /* FOOTER */
