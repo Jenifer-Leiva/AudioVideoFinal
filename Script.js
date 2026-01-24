@@ -38,7 +38,7 @@ document.querySelectorAll('.epocas-list button').forEach(btn => {
       window.location.href = "../Magnetico/magnet1.html"; 
     }
     else if (ep === "digital") {
-      window.location.href = "digital1.html"; 
+      window.location.href = "../digital/digital1.html"; 
     }
   });
 });
