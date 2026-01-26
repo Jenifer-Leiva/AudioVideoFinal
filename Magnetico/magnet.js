@@ -1,17 +1,39 @@
-/* Iconos de la pestaña magnet 2*/
-document.querySelectorAll(".icono").forEach(icono => {
-    icono.addEventListener("click", () => {
-      document
-        .getElementById(icono.dataset.popup)
-        .classList.add("activo");
-    });
-  });
+let audioActual = null;
 
-  document.querySelectorAll(".popup").forEach(popup => {
-    popup.addEventListener("click", () => {
-      popup.classList.remove("activo");
-    });
+/* Abrir popup y reproducir audio */
+document.querySelectorAll(".icono").forEach(icono => {
+  icono.addEventListener("click", () => {
+
+    // Cerrar cualquier popup abierto
+    document.querySelectorAll(".popup").forEach(p => p.classList.remove("activo"));
+
+    // Detener audio anterior
+    if (audioActual) {
+      audioActual.pause();
+      audioActual.currentTime = 0;
+    }
+
+    // Abrir popup
+    const popup = document.getElementById(icono.dataset.popup);
+    popup.classList.add("activo");
+
+    // Reproducir audio
+    audioActual = new Audio(icono.dataset.audio);
+    audioActual.play();
   });
+});
+
+/* Cerrar popup y detener audio */
+document.querySelectorAll(".popup").forEach(popup => {
+  popup.addEventListener("click", () => {
+    popup.classList.remove("activo");
+
+    if (audioActual) {
+      audioActual.pause();
+      audioActual.currentTime = 0;
+    }
+  });
+});
 
 
   /* Imagenes de magnet 3 */
