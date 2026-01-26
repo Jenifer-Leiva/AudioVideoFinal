@@ -46,19 +46,23 @@ document.querySelectorAll(".popup").forEach(popup => {
   const estados = [
     {
       img4: "../Imagenes/magnetico/d2/philipsback.png",
-      img5: "../Imagenes/magnetico/d2/philiptxt.png"
+      img5: "../Imagenes/magnetico/d2/philiptxt.png",
+      sound: "../Audio/magnetico/8track.mp3"
     },
     {
       img4: "../Imagenes/magnetico/d2/casetteback.png",
-      img5: "../Imagenes/magnetico/d2/cassettetxt.png"
+      img5: "../Imagenes/magnetico/d2/cassettetxt.png",
+      sound: "../Audio/magnetico/casete.mp3"
     },
     {
       img4: "../Imagenes/magnetico/d2/diskback.png",
-      img5: "../Imagenes/magnetico/d2/disktxt.png"
+      img5: "../Imagenes/magnetico/d2/disktxt.png",
+      sound: "../Audio/magnetico/cd.mp3"
     }
   ];
 
   let indice = 0;
+  let audioActual2 = null;
 
   btnDer.addEventListener("click", () => {
     indice = (indice + 1) % estados.length;
@@ -77,4 +81,16 @@ document.querySelectorAll(".popup").forEach(popup => {
     imgBig5.style.animation = "none";
   imgBig5.offsetHeight; // fuerza reflow
   imgBig5.style.animation = "fadeIn 5s forwards";
+
+  if (audioActual2) {
+    audioActual2.pause();
+    audioActual2.currentTime = 0;
   }
+
+  audioActual2 = new Audio(estados[indice].sound);
+  audioActual2.play();
+  
+  }
+
+
+  
