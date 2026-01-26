@@ -138,14 +138,38 @@ body{
 }
 
 
-.imagenBig[data-id="2"] {  opacity: 0;
-  animation: fadeIn 20s forwards;
-  z-index: -1; }
- 
+
+.imagenBig[data-id="1"] {   transform: translate(-900%, -50%);
+  height: 10vh; width:auto;  cursor: pointer; }
+  .imagenBig[data-id="1"]:hover {
+    transform: translate(-900%, -50%) scale(1.2);
+  }
+
+.imagenBig[data-id="2"] {   transform: translate(-630%, 80%);
+  height: 10vh; width:auto;  cursor: pointer; }
+  .imagenBig[data-id="2"]:hover {
+    transform: translate(-630%, 80%) scale(1.2);
+  }
+
+.imagenBig[data-id="3"] {   transform: translate(-380%, 40%);
+  height: 10vh; width:auto;  cursor: pointer; }
+  .imagenBig[data-id="3"]:hover {
+    transform: translate(-380%, 40%) scale(1.2);
+  }
+
+.imagenBig[data-id="4"] {   transform: translate(-130%, -70%);
+  height: 10vh; width:auto;  cursor: pointer; }
+  .imagenBig[data-id="4"]:hover {
+    transform: translate(-130%, -70%) scale(1.2);
+  }
+
+  .imagenBig[data-id="5"] {   transform: translate(240%, -30%);
+  height: 20vh; width:auto;  cursor: pointer; }
+  .imagenBig[data-id="5"]:hover {
+    transform: translate(240%, -30%) scale(1.2);
+  }
   
-  .imagenBig[data-id="3"] {  opacity: 0;
-  animation: fadeIn 25s forwards;
-  z-index: -1; }
+
 
   /*MAIN 3*/
 
