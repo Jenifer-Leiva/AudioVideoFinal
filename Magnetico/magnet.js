@@ -92,5 +92,9 @@ document.querySelectorAll(".popup").forEach(popup => {
   
   }
 
+  window.addEventListener("load", () => {
+  cambiarImagenes(); // Esto carga la primera diapositiva y reproduce el audio
+});
+
 
   
