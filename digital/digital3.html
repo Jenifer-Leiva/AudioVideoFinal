@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Historia del audio</title>
+  <link rel="stylesheet" href="digital.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header-line">
+    <div class="header-left">
+      <a href="../Info.html" >Más información</a>
+    </div>
+    <div class="header-center">
+      <a href="../Index.html" >Historia del audio</a>
+    </div>
+  </header>
+
+  <!-- Pestaña lateral Épocas -->
+  <div class="tab-epocas">
+    <button id="tabBtn" class="tab-button" aria-controls="epocasPanel">
+      Éras
+    </button>
+
+    <div id="epocasPanel" class="epocas-panel">
+      <ul class="epocas-list">
+        <li><button data-epoca="acustica">Éra acústica</button></li>
+        <li><button data-epoca="electrica">Éra eléctrica</button></li>
+        <li><button data-epoca="tape">Era magnética</button></li>
+        <li><button data-epoca="digital">Era digital</button></li>
+      </ul>
+    </div>
+  </div>
+
+ <main>
+
+   
+
+    <!-- CAPAS SUPERPUESTAS -->
+    <img class="layer escena1 activo" src="../Imagenes/digital/d2/city.png">
+    <img class="layer escena1 activo" src="../Imagenes/digital/d2/grabadorS.png">
+    <img class="layer escena1 activo" src="../Imagenes/digital/d2/grabadorA.png">
+    <img class="layer escena1 activo" src="../Imagenes/digital/d2/letras1.png">
+
+    <img class="layer escena2 " src="../Imagenes/digital/d2/city2.png">
+    <img class="layer escena2 " src="../Imagenes/digital/d2/mp3.png">
+    <img class="layer escena2 " src="../Imagenes/digital/d2/mp3letr.png">
+    <img class="layer escena2 " id="escena2Img" >
+
+    <!-- TUS BOTONES -->
+    <div class="botones-centro">
+        <img id="btnIzq" class="imagenBut" src="../Imagenes/digital/d2/btnizq.png">
+        <img id="btnDer" class="imagenBut" src="../Imagenes/digital/d2/btnder.png">
+    </div>
+
+        <div id="btnaudio" class="botones-mp3 oculto">
+        <img id="mp3Izq" class="imagenButmp3" src="../Imagenes/digital/d2/mp3izq.png">
+        <img id="mp3Der" class="imagenButmp3" src="../Imagenes/digital/d2/mp3der.png">
+        </div>
+
+        <audio id="audio"></audio>
+
+</main>
+
+
+
+<footer>
+    <a href="digital2.html">
+    <img src="../Imagenes/Botonizq.png" alt="Ir a página" class="btn-imagen">
+  </a>
+    <a href="../final.html">
+    <img src="../Imagenes/BotonDer.png" alt="Ir a página" class="btn-imagen">
+  </a>
+</footer>
+
+<script src="../script.js"></script>
+<script src="digital.js"></script>
+
+</body>
+</html>

@@ -57,15 +57,17 @@ main{
   border-radius:8px;
   box-shadow:var(--shadow);
 }
+
 .mi-imagen {
-  position: fixed;
+  position: absolute;
   top: 60%;
   left: 50%;
   height: 100%;
   width: auto;
-  z-index: -1;
   transform: translate(-50%, -55%);
+  z-index:-1;
 }
+
 
 
 

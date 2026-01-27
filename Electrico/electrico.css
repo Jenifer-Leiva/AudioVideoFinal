@@ -226,7 +226,7 @@ body{
 
 
 
-/*MAIN3*/
+/*MAIN 3*/
 
 .imagenSala {
   position: absolute;
@@ -236,31 +236,46 @@ body{
 
 }
 
+.imagenSala2 {
+  transform: translate(53%, 15%);
+  max-height: 68vh;
+animation: fadeOut 10s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+      opacity: 1; /* empieza visible */
+    }
+    100% {
+      opacity: 0; /* desaparece */
+    }
+  }
+
 .imagenSala[data-id="1"] {   transform: translate(-50%, -46%);
   max-height: 90vh;}
  
 .imagenSala[data-id="2"] {   transform: translate(-210%, -10%);
-  height: 40vh;cursor: pointer;}
+  height: 40vh;cursor: pointer; z-index: 2;}
    .imagenSala[data-id="2"]:hover {
     transform: translate(-210%, -10%) scale(1.05);
   }
   
 .imagenSala[data-id="3"] { transform: translate(-60%, -10%);
-  height: 40vh;cursor: pointer; }
+  height: 40vh;cursor: pointer; z-index: 2;}
   .imagenSala[data-id="3"]:hover {
     transform: translate(-60%, -10%) scale(1.05);
   }
   
  
 .imagenSala[data-id="4"] {   transform: translate(-60%, -70%);
-  height: 40vh;cursor: pointer; }
+  height: 40vh;cursor: pointer; z-index: 2;}
   .imagenSala[data-id="4"]:hover {
     transform: translate(-60%, -70%) scale(1.05);
   }
   
   
   .imagenSala[data-id="5"] {   transform: translate(50%, -10%);
- height: 45vh;cursor: pointer; }
+ height: 45vh;cursor: pointer; z-index: 2;}
   .imagenSala[data-id="5"]:hover {
     transform: translate(50%, -10%) scale(1.05);
   }
