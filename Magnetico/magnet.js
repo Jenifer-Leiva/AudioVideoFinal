@@ -47,17 +47,17 @@ document.querySelectorAll(".popup").forEach(popup => {
     {
       img4: "../Imagenes/magnetico/d2/philipsback.png",
       img5: "../Imagenes/magnetico/d2/philiptxt.png",
-      sound: "../Audio/magnetico/8track.mp3"
+      sound: "../Audio/magnetico/8track.opus"
     },
     {
       img4: "../Imagenes/magnetico/d2/casetteback.png",
       img5: "../Imagenes/magnetico/d2/cassettetxt.png",
-      sound: "../Audio/magnetico/casete.mp3"
+      sound: "../Audio/magnetico/casete.opus"
     },
     {
       img4: "../Imagenes/magnetico/d2/diskback.png",
       img5: "../Imagenes/magnetico/d2/disktxt.png",
-      sound: "../Audio/magnetico/cd.mp3"
+      sound: "../Audio/magnetico/cd.opus"
     }
   ];
 
