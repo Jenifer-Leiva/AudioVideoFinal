@@ -1,8 +1,8 @@
 
 const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 
-const AUDIO_BASE = "../Audio/80music.mp3";
-const AUDIO_ROTURA = "../Audio/brokencd.mp3";
+const AUDIO_BASE = "../Audio/80music.opus";
+const AUDIO_ROTURA = "../Audio/brokencd.opus";
 
 let audioBase, sourceBase;
 let audioEfecto, sourceEfecto;
@@ -167,10 +167,10 @@ const audio = document.getElementById('audio');
 const escena2Img = document.getElementById('escena2Img');
 
 const escena2Data = [
-  { img: "../Imagenes/digital/d2/mp3info1.png", audio: "../Audio/mp3/AlbertKaderUbiquous.mp3" },
-  { img: "../Imagenes/digital/d2/mp3info2.png", audio: "../Audio/mp3/DaimonbBrokenAgain.mp3" },
-  { img: "../Imagenes/digital/d2/mp3info3.png", audio: "../Audio/mp3/KangaroKingPascal.mp3" },
-  { img: "../Imagenes/digital/d2/mp3info4.png", audio: "../Audio/mp3/SpeaksoftlyBrokenman.mp3" },
+  { img: "../Imagenes/digital/d2/mp3info1.png", audio: "../Audio/mp3/AlbertKaderUbiquous.opus" },
+  { img: "../Imagenes/digital/d2/mp3info2.png", audio: "../Audio/mp3/DaimonbBrokenAgain.opus" },
+  { img: "../Imagenes/digital/d2/mp3info3.png", audio: "../Audio/mp3/KangaroKingPascal.opus" },
+  { img: "../Imagenes/digital/d2/mp3info4.png", audio: "../Audio/mp3/SpeaksoftlyBrokenman.opus" },
 ];
 
 let indexEscena2 = 0; // índice actual
