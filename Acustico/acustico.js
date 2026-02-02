@@ -1,3 +1,59 @@
+/*acustico2*/
+
+document.addEventListener("DOMContentLoaded", () => {
+  const video = document.querySelector(".video-fondo");
+  if (!video) return;
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        video.src = video.dataset.src;
+        video.load();
+        video.play().catch(() => {});
+        observer.disconnect();
+      }
+    });
+  }, {
+    threshold: 0.4
+  });
+
+  observer.observe(video);
+});
+
+
+
+window.addEventListener("beforeunload", () => {
+  const video = document.querySelector(".video-fondo");
+  if (video) {
+    video.pause();
+    video.removeAttribute("src");
+    video.load();
+  }
+});
+
+
+
+
+///////////////////////////////////////////////////////////////
+
+const lazyImages = document.querySelectorAll("img[data-src]");
+
+const imgObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const img = entry.target;
+      img.src = img.dataset.src;
+      img.removeAttribute("data-src");
+      imgObserver.unobserve(img);
+    }
+  });
+}, {
+  threshold: 0.2
+});
+
+lazyImages.forEach(img => imgObserver.observe(img));
+
+
 /* Evitar error si no existe video en esta página */
 const video = document.getElementById("miVideo");
 const imagen = document.getElementById("imagenFinal");
@@ -18,9 +74,11 @@ const audioCerrar = document.getElementById("audioCerrar");
 img3.dataset.open = "false";
 img3.addEventListener("click", () => {
 
+  
+
     if (img3.dataset.open === "true") {
         // CERRAR
-        img3.src = "../Imagenes/acustico/d2/Caja.png";
+        img3.src = "../Imagenes/acustico/d2/Caja.webp";
 
         audioCerrar.currentTime = 0;
         audioCerrar.play();
@@ -32,7 +90,7 @@ img3.addEventListener("click", () => {
     } 
     else {
         // ABRIR
-        img3.src = "../Imagenes/acustico/d2/CajaAbierta.png";
+        img3.src = "../Imagenes/acustico/d2/CajaAbierta.webp";
 
         audioAbrir.currentTime = 0;
         audioAbrir.play();
